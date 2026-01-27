@@ -1,6 +1,8 @@
 <?php
 namespace App\Core;
 
+use App\Controllers\StudentController;
+
 class Router
 {
 
@@ -10,8 +12,16 @@ class Router
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
         if ($method == 'GET' && $uri == '/sugus') {
-            echo '<h1>Daftar Sugus</h1>';
-            echo '<p>Menampilkan daftar sugus</p>';
+            require_once'./app/controllers/StudentController.php';
+            $controller = new StudentController();
+            $controller->index();
+            return;
+        }
+
+        if ($method == 'GET' && $uri == '/sugus/create') {
+            require_once'./app/controllers/StudentController.php';
+            $controller = new StudentController();
+            $controller->create();
             return;
         }
 
