@@ -9,6 +9,7 @@ $router = new Router();
 $router->add('GET',  '/sugus',  'StudentController','index');
 $router->add('GET',  '/sugus/create',  'StudentController',  'create');
 $router->add('GET',  '/sugus/{id}',  'StudentController',  'show');
+$router->add('GET',  '/sugus/{id}/edit', 'StudentController', 'edit');
 
 $router->run();
 
