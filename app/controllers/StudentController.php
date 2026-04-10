@@ -9,7 +9,6 @@ class StudentController extends Controller
 
     public function index()
     {
-      require_once '../app/views/students/index.php';
       $this->view('students.index');
     }
 
