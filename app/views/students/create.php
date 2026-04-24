@@ -16,7 +16,7 @@
             </div>
             <div class="space-y-2">
                 <label for="nis" class="block font-bold">NIS</label>
-                <input class="w-full border rounded-lg py-2 px-4" type="text" name="NIS" id="NIS"
+                <input class="w-full border rounded-lg py-2 px-4" type="text" name="nis" id="NIS"
                     placeholder="Masukkan NIS">
             </div>
             <div class="space-y-2">
